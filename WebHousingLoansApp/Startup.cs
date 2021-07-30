@@ -27,7 +27,7 @@ namespace WebHousingLoansApp
 
             services.AddScoped<IApplicationDbContext, ApplicationDbContext>();
 
-            services.AddScoped<ICustomerDetailRepository, CustomerDetailRepository>(options => new CustomerDetailRepository(new HosingLoansLab1DBContext()));
+            services.AddScoped<ICustomerDetailRepository, CustomerDetailRepository>(options => new CustomerDetailRepository(new ApplicationDbContext()));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

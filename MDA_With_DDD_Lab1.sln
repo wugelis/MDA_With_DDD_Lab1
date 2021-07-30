@@ -11,13 +11,18 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{0CC2291C-3E4E-4E55-842D-2BB859945E01}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HousingLoans.Domain", "HousingLoans.Domain\HousingLoans.Domain.csproj", "{1358D2C2-95F6-4531-9E34-366F614939BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HousingLoans.Domain", "HousingLoans.Domain\HousingLoans.Domain.csproj", "{1358D2C2-95F6-4531-9E34-366F614939BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HousingLoans.Infrastructure", "HousingLoans.Infrastructure\HousingLoans.Infrastructure.csproj", "{DFFA9A68-5493-42E4-8FF3-D88934181A7A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HousingLoans.Infrastructure", "HousingLoans.Infrastructure\HousingLoans.Infrastructure.csproj", "{DFFA9A68-5493-42E4-8FF3-D88934181A7A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HousingLoans.Application", "HousingLoans.Application\HousingLoans.Application.csproj", "{4CA30EB2-3083-4DFF-A149-90E1BA2E9C5F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HousingLoans.Application", "HousingLoans.Application\HousingLoans.Application.csproj", "{4CA30EB2-3083-4DFF-A149-90E1BA2E9C5F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebHousingLoansApp", "WebHousingLoansApp\WebHousingLoansApp.csproj", "{C0505C32-D665-4BB8-B8A2-CF2420257446}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebHousingLoansApp", "WebHousingLoansApp\WebHousingLoansApp.csproj", "{C0505C32-D665-4BB8-B8A2-CF2420257446}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{826F66DA-293C-4C96-A05A-8517E56FD136}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

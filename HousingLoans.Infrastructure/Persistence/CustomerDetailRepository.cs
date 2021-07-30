@@ -10,9 +10,9 @@ namespace HousingLoans.Infrastructure.Persistence
 {
     public class CustomerDetailRepository: ICustomerDetailRepository
     {
-        private readonly HosingLoansLab1DBContext context;
+        private readonly ApplicationDbContext context;
 
-        public CustomerDetailRepository(HosingLoansLab1DBContext context)
+        public CustomerDetailRepository(ApplicationDbContext context)
         {
             this.context = context;
         }
