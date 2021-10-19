@@ -1,0 +1,79 @@
+# top-most EditorConfig file
+root = true
+
+[*]
+end_of_line              = crlf
+charset                  = utf-8
+trim_trailing_whitespace = true
+insert_final_newline     = true
+max_line_length = 170
+
+[*.xml]
+indent_style = space
+
+[*.{cs,cshtml}]
+dotnet_style_predefined_type_for_locals_parameters_members = true:warning
+dotnet_style_predefined_type_for_member_access = true:warning
+dotnet_style_explicit_tuple_names = true:warning
+dotnet_style_null_propagation = true:warning
+csharp_style_var_when_type_is_apparent = true:warning
+csharp_style_pattern_matching_over_is_with_cast_check = true:warning
+csharp_style_pattern_matching_over_as_with_null_check = true:warning
+csharp_style_inlined_variable_declaration = true:warning
+
+csharp_style_throw_expression = false:warning
+dotnet_sort_system_directives_first = true
+
+csharp_new_line_before_open_brace = all
+csharp_new_line_before_else = true
+csharp_new_line_before_catch = true
+csharp_new_line_before_finally = true
+csharp_new_line_before_members_in_object_initializers = true
+csharp_new_line_before_members_in_anonymous_types = true
+
+csharp_indent_case_contents = true
+csharp_indent_switch_labels = true
+
+csharp_space_after_cast = true
+csharp_space_after_keywords_in_control_flow_statements = false
+csharp_space_between_method_declaration_parameter_list_parentheses = false
+csharp_space_between_method_call_parameter_list_parentheses = false
+csharp_space_between_parentheses = false
+
+csharp_preserve_single_line_statements = false
+csharp_preserve_single_line_blocks = true
+
+### naming conventions
+### 2021-10-15 增加 private 變數前最綴是否為 Underline 檢查
+# styles
+dotnet_naming_rule.private_members_with_underscore.symbols  = private_fields
+dotnet_naming_rule.private_members_with_underscore.style    = prefix_underscore
+dotnet_naming_rule.private_members_with_underscore.severity = suggestion
+
+dotnet_naming_symbols.private_fields.applicable_kinds           = field
+dotnet_naming_symbols.private_fields.applicable_accessibilities = private
+
+dotnet_naming_style.prefix_underscore.capitalization = camel_case
+dotnet_naming_style.prefix_underscore.required_prefix = _
+
+# prefix_interface_interface_with_i - Interfaces must be PascalCase and the first character of an interface must be an 'I'
+dotnet_naming_style.prefix_interface_interface_with_i.capitalization = first_word_upper
+dotnet_naming_style.prefix_interface_interface_with_i.required_prefix = I
+
+# symbols
+dotnet_naming_symbols.private_symbols.applicable_accessibilities = private
+dotnet_naming_symbols.public_symbols.applicable_accessibilities = public, protected
+dotnet_naming_symbols.interface_types.applicable_kinds = interface
+
+
+# rules
+dotnet_naming_rule.camel_case_for_private.severity = warning
+dotnet_naming_rule.camel_case_for_private.symbols  = private_symbols
+
+dotnet_naming_rule.first_upper_for_public.severity = warning
+dotnet_naming_rule.first_upper_for_public.symbols  = public_symbols
+
+# Interfaces must be FirstUpper and start with an 'I'
+dotnet_naming_rule.interface_types_must_be_prefixed_with_i.severity = warning
+dotnet_naming_rule.interface_types_must_be_prefixed_with_i.symbols = interface_types
+dotnet_naming_rule.interface_types_must_be_prefixed_with_i.style = prefix_interface_interface_with_i
