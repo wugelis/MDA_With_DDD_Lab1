@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
+	  <EnableNETAnalyzers>true</EnableNETAnalyzers>
   </PropertyGroup>
 
   <ItemGroup>
@@ -13,6 +14,14 @@
   <ItemGroup>
     <ProjectReference Include="..\HousingLoans.Application\HousingLoans.Application.csproj" />
     <ProjectReference Include="..\HousingLoans.Infrastructure\HousingLoans.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EditorConfigFiles Remove="D:\Gelis Documents\MentorTrust\志明科大\Test\MDA_With_DDD_Lab1\WebHousingLoansApp\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="D:\Gelis Documents\MentorTrust\志明科大\Test\MDA_With_DDD_Lab1\WebHousingLoansApp\.editorconfig" />
   </ItemGroup>
 
 </Project>

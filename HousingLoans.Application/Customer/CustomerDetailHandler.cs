@@ -1,4 +1,4 @@
-﻿using HousingLoans.Application.Customer.Dto;
+using HousingLoans.Application.Customer.Dto;
 using HousingLoans.Application.Customer.Repositories;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +11,8 @@ namespace HousingLoans.Application.Customer
     public class CustomerDetailHandler
     {
         private readonly ICustomerDetailRepository _customerDetailRepository;
+        private string myname = string.Empty;
+        private string aaa;
 
         public CustomerDetailHandler(ICustomerDetailRepository customerDetailRepository)
         {

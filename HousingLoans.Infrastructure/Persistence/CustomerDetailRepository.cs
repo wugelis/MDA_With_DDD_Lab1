@@ -19,7 +19,7 @@ namespace HousingLoans.Infrastructure.Persistence
 
         public void Add(ICustomerDetail customer)
         {
-            throw new NotImplementedException();
+            context.CustomerDetails.Add(customer as CustomerDetail);
         }
 
         public void Edit(ICustomerDetail customer)
