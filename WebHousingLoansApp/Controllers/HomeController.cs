@@ -1,4 +1,4 @@
-﻿using HousingLoans.Application.Customer;
+using HousingLoans.Application.Customer;
 using HousingLoans.Application.Customer.Repositories;
 using HousingLoans.Infrastructure.Persistence;
 using Microsoft.AspNetCore.Mvc;
@@ -34,6 +34,11 @@ namespace WebHousingLoansApp.Controllers
         }
 
         public IActionResult Privacy()
+        {
+            return View();
+        }
+
+        public IActionResult About()
         {
             return View();
         }
